@@ -1,4 +1,4 @@
-const bubbleMaker =() =>{
+const bubbleMaker = () =>{
     //create the bubble
     const bubble = document.createElement("span");
     bubble.classList.add("bubble");
@@ -14,5 +14,9 @@ const bubbleMaker =() =>{
     bubble.style.left = Math.random() * 100 + "%";
     
     // set the randomly direction of bubble
-    bubble.style.setProperty("--left", Math.random() * 100 + "%");
+    const plusMinus = Math.random() > 0.5 ? 1 : -1;
+    bubble.style.setProperty("--left", Math.random() * 100 * plusMinus + "%");
 };
+setInterval(() => {
+   bubbleMaker(); 
+}, 300);

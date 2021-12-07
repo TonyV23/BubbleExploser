@@ -12,7 +12,7 @@ body{
 }
 @keyframes anim {
     to{
-        top: -250px;
+        top: -350px;
         left: var(--left);
         opacity: 1;
         filter: hue-rotate(720deg);
