@@ -1,7 +1,5 @@
-body{
-    overflow: hidden;
-    min-height: 100vh;
-}
+body{overflow: hidden; min-height: 100vh; cursor: crosshair;}
+h3{font-size: 12rem; text-align: center;color: olive;}
 .bubble{
     position: absolute;
     border-radius: 300px;
